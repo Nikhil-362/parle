@@ -1,0 +1,607 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#page1 {
+    background-image: url(images/main.jpg);
+    height: 100vh;
+    position: relative;
+}
+
+
+#glassmor{
+    /* From https://css.glass */
+    /* background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px 0 11px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2); */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-width: 50vw;
+    font-size: larger;
+    top: 73%;
+    left: 25%;
+    height: 100px;
+    width: 10vw;
+}
+
+#glassmor button{
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1vw;
+    width: 40vw;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.399);
+}
+
+#glassmor button:hover{
+    background-color: rgba(128, 128, 128, 0.387);
+
+}
+
+
+
+nav {
+    position: fixed;
+    margin: 3vh 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: medium;
+    /* font-weight: bolder; */
+    width: 100vw;
+    height: 6vh;
+    z-index: 30;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 1vw;
+    padding: .5vw;
+}
+nav a:hover {
+    text-decoration:underline;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: .5vw;
+}
+
+#cursor{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 50;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#logo {
+    height: 5vh;
+}
+
+p {
+    color: white;
+}
+
+#brandName {
+    color: rgb(255, 255, 255);
+    font-size: 200px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+#bis {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%);
+    max-width: 100%;
+    height: auto;
+}
+
+#main {
+    min-height: 100vh;
+}
+
+.bx-menu:hover{
+    background: #ffffff65;
+}
+
+.navOption{
+    position: fixed;
+    top: 0%;
+    right: -30%;
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.293);
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20%;
+    color: white;
+}
+
+.option ul{
+    margin: 5%;
+    font-size: xx-large;
+}
+
+.option a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+ #closeDiv{
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    color: white;
+}
+#closeDiv:hover{
+    background-color: #a4a2a262;
+    border-radius: 50%;
+}
+
+
+#page1 {
+    background: rgb(47, 47, 47);
+    background: radial-gradient(circle, rgba(47, 47, 47, 1) 5%, rgba(0, 0, 0, 1) 90%);
+    min-height: 100vh;
+ 
+
+}
+
+
+#page2 {
+    background: rgb(231, 170, 0);
+    background: linear-gradient(100deg, rgba(231, 170, 0, 1) 43%, rgba(255, 190, 12, 1) 70%, rgba(255, 190, 13, 1) 99%, rgba(255, 255, 255, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    padding: 30vh 20vh;
+}
+
+#two-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+#pageDiv {
+    position: relative;
+    display: flex;
+    padding: 0px 14vh;
+}
+
+#pageDiv > div {
+    flex: 1;
+}
+
+#two-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 21;
+}
+
+.bisImg {
+    position: relative;
+    z-index: 21;
+    max-width: 33vw;
+    max-height: 36vh;
+}
+
+#two-right #back {
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    height: 18vw;
+    z-index: 21;
+}
+
+button {
+    background-color: #d18800;
+    color: #ffffff;
+    padding: 1vh 0;
+    margin: 4vh 1vh;
+    font-size: larger;
+    font-weight: bold;
+    max-width: 10vw;
+    border-radius: 10px;
+    border: 1px solid #a66002;
+}
+
+#glass {
+    z-index: 22;
+    color: rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+}
+
+#Title {
+    color: #ffffff;
+    font-size: xxx-large;
+    font-weight: 800;
+    margin: 3vh 0;
+}
+
+#Des {
+    color: white;
+    font-size: 2.1vh;
+    padding: 0 1vh;
+}
+
+#red {
+    height: 40vh;
+    background-color: #da0b13;
+    width: 100%;
+    font-size: 25px;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#red span {
+    color: white;
+    padding: 4vw;
+    font-weight: 700;
+}
+
+#parleg {
+    position: absolute;
+    font-size: 151px;
+    font-weight: 800;
+    letter-spacing: -11px;
+}
+
+#parleg span {
+    color: rgba(75, 6, 6, 0.313);
+}
+
+#page3 {
+    background-color: #ae3527;
+    max-height: 100vh;
+    padding: 30vh 20vh;
+}
+
+#page3 button {
+    padding: 12px;
+    background: #0000008c;
+}
+
+#page3 #glass {
+    -webkit-text-stroke: 2px rgba(255, 64, 64, 0.929);
+}
+
+#threeLeft {
+    margin-right: 15%;
+}
+
+#happy {
+    position: absolute;
+    top: 2%;
+    font-size: 151px;
+    font-weight: 800;
+    letter-spacing: -11px;
+    color: white;
+}
+
+#happy p {
+    color: #e35f50;
+}
+
+.bisHappy {
+    position: relative;
+    z-index: 21;
+    max-width: 33vw;
+    max-height: 45vh;
+    left: 10%;
+}
+
+#floatBis img {
+    position: absolute;
+    z-index: 22;
+    rotate: 298deg;
+    left: 32%;
+    top: 24%;
+    max-width: 24vh;
+    filter: contrast(150%);
+}
+
+#page4 {
+    background: rgb(177, 15, 223);
+    background: linear-gradient(100deg, rgba(177, 15, 223, 1) 0%, rgba(117, 1, 150, 1) 100%);
+    min-height: 100vh;
+    padding: 30vh 20vh;
+}
+
+#page4 button {
+    background-color: #71008a;
+}
+
+#page4 .bisImg {
+    max-height: 50vh;
+}
+
+#page4 #back {
+    max-height: 33vh;
+    left: 8%;
+    top: 40%;
+    filter: brightness(0.7);
+}
+
+#page4 p {
+    padding: 10% 0;
+    letter-spacing: -10px;
+}
+
+#page4 #two-left {
+    padding-right: 16vh;
+}
+
+#brandName {
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: black;
+    min-height: 60vh;
+    padding: 13vh 20vh;
+}
+
+#footer .logos {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logoSliders {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.logoSliders img {
+    height: 150px;
+}
+
+hr {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #2b2b2b;
+}
+
+footer {
+    background-color: #000000;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #a4a2a2;
+}
+
+.footer-column.contact p {
+    margin: 5px 0;
+    color: darkgrey;
+}
+
+.footer-column.follow ul {
+    display: flex;
+    padding: 0;
+}
+
+.footer-column.follow ul li {
+    margin-right: 10px;
+}
+
+.footer-column.follow ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav a {
+        margin: 2vw 0;
+    }
+
+    #page2 {
+        flex-direction: column;
+        padding: 10vh 5vh;
+    }
+
+    .bisImg {
+        max-width: 80vw;
+        max-height: auto;
+    }
+
+    button {
+        max-width: 50vw;
+    }
+
+    #red {
+        padding: 5vw;
+        font-size: 20px;
+    }
+
+    #happy {
+        font-size: 100px;
+    }
+
+    #page4 {
+        padding: 15vh 5vh;
+    }
+
+    #page4 #two-left {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #pageDiv{
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page2 #pageDiv, #page4 #pageDiv{
+        flex-direction: column-reverse;
+    }
+    #brandName {
+        font-size: 100px;
+    }
+
+    #Title {
+        font-size: xx-large;
+    }
+
+    #Des {
+        font-size: 1.5vh;
+    }
+
+    .bisImg {
+        max-width: 90vw;
+    }
+
+    button {
+        max-width: 70vw;
+    }
+
+    #red {
+        padding: 10vw;
+        font-size: 16px;
+    }
+
+    #happy {
+        font-size: 80px;
+    }
+
+    #page4 p {
+        letter-spacing: -5px;
+    }
+
+    #page3{
+        padding: 10vh 5vh;
+        min-height: 100vh;
+    }
+
+    #floatBis img {
+        
+        top: 10%;
+    }    
+    .bisHappy{
+        max-width: 62vw;
+    }
+    #parleg {
+        font-size: 77px;
+    }
+    #glass {
+        font-size: 30px;
+    }
+    #two-right #back {
+        top: 44%;
+        left: 31%;
+        height: 52vw;
+    }
+    .bisImg {
+        max-width: 65vw;
+    }
+
+    #footer {
+        padding: 16vh 7vh;
+    }
+
+    #anc{
+        display: none;
+    }
+    nav {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        padding: 3vh 6vh;
+    }
+    .navOption {
+       width: 70%;
+       right: -90%;
+    }
+    
+}
